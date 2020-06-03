@@ -13,19 +13,47 @@
 </head>
 
 <body>
-    <h1 class="heading"> Coding Quiz Challenge</h1>
+
+    <!-- Nav bar for the score history and timer -->
+    <div id="nav">
+        <div class="far-left">
+            <a click="getScore()" href="#" id="score">
+                <h4>View Highscore<h/4>
+            </a>
+        </div>
+        <div class="far-right" id="timer">
+            <h4>Time left:<h/4>
+        </div>
+    </div>
+    <!-- nav bar end -->
 
 
-    <div class="container">
-        <p>Try ato answer the follwing question wihtin the
+    <!-- container for the Quiz -->
+    <div id="quiz-container">
+        <div id="heading">
+            <h1 class="heading"> Coding Quiz Challenge</h1>
+        </div>
+        <p>Try to answer the follwing question wihtin the
             time limit.</p>
-        <br>
         <p>Keep in mind that incorrect answer will penalize
             your time by ten second!</p>
 
-        <button type="button" class="btn btn-outline-dark">Start Quiz</button>
+        <div id="start">
+            <button type="button" class="btn btn-outline-warning">Start Quiz</button>
+        </div>
+    <!-- Quiz container end  -->
+
+
+
 
     </div>
+
+
+
+
+
+
+
 
 
 
