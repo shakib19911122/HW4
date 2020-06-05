@@ -8,7 +8,7 @@
     float: left;
 }
 
-#timer {
+#timeLeft {
     font-family: Arial, Helvetica, sans-serif;
     color: orange;
     float: right;
@@ -16,11 +16,31 @@
     
 }
 
+.right{
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    color: orange;
+
+}
+
+button{
+    color: orange;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 body{
     background: url(../HW4/asset/quiz_background2.jpg)
 
 
+}
+
+#quiz-container{
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    text-align: center;
+    margin-top: 100px;
 }
 
 
@@ -36,7 +56,7 @@ body{
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    color:white;
+    color: orange;
     text-align: center;
 }
 

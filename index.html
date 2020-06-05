@@ -17,11 +17,14 @@
     <!-- Nav bar for the score history and timer -->
     <div id="nav">
         <div class="far-left">
-            <a click="getScore()" href="#" id="score">
+            <a onclick="getScore()" href="#" id="score">
                 <h4>View Highscore<h/4>
             </a>
         </div>
-        <h4>Timer:<div class="far-right" id="timer">Timer:<div id="seconds">10</div></h4>
+        
+        <div class="right">
+            <h4>Time: <span id="timeLeft">0</span></h4>
+        </div>
     </div>
     <!-- nav bar end -->
 
@@ -31,13 +34,15 @@
         <div id="heading">
             <h1 class="heading"> Coding Quiz Challenge</h1>
         </div>
+        <div id ="p">
         <p>Try to answer the follwing question wihtin the
             time limit.</p>
         <p>Keep in mind that incorrect answer will penalize
             your time by ten second!</p>
+        </div>
 
         <div id="start">
-            <button type="button" class="btn btn-outline-warning">Start Quiz</button>
+            <button onclick="start()" type="button" class="btn btn-outline-warning">Start Quiz</button>
         </div>
     <!-- Quiz container end  -->
 
