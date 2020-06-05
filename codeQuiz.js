@@ -46,7 +46,6 @@ function start() {
     timer = setInterval(function() {
         timeLeft--;
         document.getElementById("timeLeft").innerHTML = timeLeft;
-        //proceed to end the game function when timer is below 0 at any time
         if (timeLeft <= 0) {
             clearInterval(timer);
             endGame(); 
@@ -71,7 +70,7 @@ function endGame() {
     
 
 
-//76~86
+
 function getScore() {
     var quizContent = `
     <h2>` + localStorage.getItem("highscoreName") + `'s highscore is:</h2>
@@ -105,7 +104,7 @@ function getScore() {
 }
 
 
-//89~95
+
 
 function clearScore() {
     localStorage.setItem("highscore", "");
@@ -115,7 +114,6 @@ function clearScore() {
 }
 
 
-//97~116
 function resetGame() {
     clearInterval(timer);
     score = 0;
@@ -137,20 +135,19 @@ function resetGame() {
     document.getElementById("quiz-container").innerHTML = quizContent;
 }
 
-//119~154
+
 
 function incorrect() {
     timeLeft -= 15; 
     next();
 }
 
-//increases the score by 20points if the user chooses the correct answer
+
 function correct() {
     score += 20;
     next();
 }
-
-//loops through the questions 
+ 
 function next() {
     currentQuestion++;
 
